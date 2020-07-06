@@ -25,7 +25,7 @@ and a `docker-compose.yml` file. (You can use either a `.yml` or `.yaml` extensi
 
 3. Add the following content to the `Dockerfile`.
 
-       FROM python:3
+       FROM python:3.8-slim-buster
        ENV PYTHONUNBUFFERED 1
        RUN mkdir /code
        WORKDIR /code
@@ -181,7 +181,7 @@ In this section, you set up the database connection for Django.
     . . .
 
     web_1  | May 30, 2017 - 21:44:49
-    web_1  | Django version 1.11.1, using settings 'composeexample.settings'
+    web_1  | Django version 3.0.8, using settings 'composeexample.settings'
     web_1  | Starting development server at http://0.0.0.0:8000/
     web_1  | Quit the server with CONTROL-C.
     ```
